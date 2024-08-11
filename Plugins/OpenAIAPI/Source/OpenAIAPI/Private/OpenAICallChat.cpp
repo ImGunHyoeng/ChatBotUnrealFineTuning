@@ -55,6 +55,10 @@ void UOpenAICallChat::Activate()
 		case EOAChatEngineType::GPT_3_5_TURBO_FineTunning:
 			apiMethod = "ft:gpt-3.5-turbo-0125:personal::9sZfdT2h";
 			break;
+		case EOAChatEngineType::GPT_3_5_TURBO_FineTunning_V2:
+			apiMethod = "ft:gpt-3.5-turbo-0125:personal::9tqMdMe0";
+			break;
+
 		}
 		
 		//TODO: add aditional params to match the ones listed in the curl response in: https://platform.openai.com/docs/api-reference/making-requests
